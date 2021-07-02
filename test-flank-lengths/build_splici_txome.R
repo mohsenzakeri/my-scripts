@@ -49,8 +49,7 @@ make_splici_txome <- function(gtf_path,
   # Process gtf to get spliced and introns
   #########################################################################################################
   message("============processing gtf to get spliced and introns============")  
-  # fl is the flank length, here we set it to 
-  # the read length - 5 
+  # fl is the flank length 
   grl <- suppressWarnings(getFeatureRanges(
     gtf = file.path(gtf_path),
     featureType = c("spliced", "intron"), 
@@ -206,8 +205,8 @@ suppressPackageStartupMessages({
 gtf_path = arg_list[1]
 genome_path = arg_list[2]
 flank_length = as.integer(arg_list[3])
-splici_dir = arg_list[5]
-extra_spliced = arg_list[6]
+splici_dir = arg_list[4]
+extra_spliced = arg_list[5]
 
 make_splici_txome(gtf_path, genome_path, flank_length, splici_dir, extra_spliced)
   

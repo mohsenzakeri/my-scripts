@@ -20,7 +20,7 @@ for ((i=START;i<=END;i=i+5)); do
 	echo $cmd
 	eval $cmd
 	fasta="$top_dir/$ref_name/transcriptome_splici_fl$i/transcriptome_splici_fl$i.fa"
-	salmon_dir="$ref_name/salmon_fl${i}_index_sparse/"
+	salmon_dir="$top_dir/$ref_name/salmon_fl${i}_index_sparse/"
 	mkdir -p $salmon_dir
 	cmd="/usr/bin/time -v -o $salmon_dir/index.time $salmon index -i $salmon_dir -t $fasta -p $threads --sparse"
 	echo $cmd
