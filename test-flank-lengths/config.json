@@ -1,0 +1,10 @@
+{
+	"top_dir" : "/mnt/scratch1/mohsen/salmon_indices/salmon_sim_data/",
+	"truth_dir" : "/mnt/scratch1/alevin_fry_submission/samples/sim_data/truth/",
+	"af-splici-sketch" : "results/alevin_fry/sim_data/fry_unfilt_quant_usa_cr-like/",
+	"af-splici-sla" : "results/alevin_fry/sim_data/fry_sla_unfilt_quant_usa_cr-like/",
+	"af-txome-sketch" : "results/alevin_fry/sim_data/fry_unfilt_quant_txome_cr-like/",
+	"solo" : "results/star_solo/sim_data/star_solo/Solo.out/Gene/raw/",
+	"kb" : "results/kb/sim_data/kb_out/counts_unfiltered/"
+
+}
